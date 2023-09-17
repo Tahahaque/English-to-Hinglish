@@ -8,7 +8,9 @@ T5, short for Text-to-Text Transfer Transformer, derives its foundation from the
 The dataset used was taken from hugging face. It can be found here (https://huggingface.co/datasets/findnitai/english-to-hinglish)
 
 # Installing and Executing
-The code can be taken from the hinglish.py file. It can be run on Google Colab, Jupyter as well as your local machine. All the libraries needed are already added in the Python file.
+* The code can be taken from the hinglish.py file. It can be run on Google Colab, Jupyter as well as your local machine. All the libraries needed are already added in the Python file.
+* The number of Epochs can be increased to get better accuracy and results.
+* Also, the batch size can be decreased in order to obtain better results.
 
 # Challenges faced and Solved
 * The data widely available is not upto the mark, hence finetuning on the custom dataset resulted in the model to give highly accurate Hinglish translations 
