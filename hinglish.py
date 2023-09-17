@@ -91,7 +91,6 @@ data_collator = default_data_collator
 
 
 trainer_args_in = {
-    'output_dir': 'my-t5-hinglish-translator',
     'overwrite_output_dir' : True,
     'do_train' : True,
     # 'do_valid' : False,
@@ -125,7 +124,6 @@ outputs = model.generate(input_ids)
 # Decode and print the output
 print("Test Output: " + tokenizer.decode(outputs[0], skip_special_tokens=True))
 
-model = AutoModelForSeq2SeqLM.from_pretrained("my-t5-hinglish-translator")  # Path to output dir
 input_text = "translate English to Hinglish: I was waiting for my bag"
 input_ids = tokenizer(input_text, return_tensors="pt").input_ids
 outputs = model.generate(input_ids)
